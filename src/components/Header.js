@@ -12,7 +12,7 @@ const Header = () =>
         <a href="/">
           <img
             src="https://see.fontimg.com/api/renderfont4/VGWjy/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/S29vbCBDYXR6/meows.png"
-            alt="Cat fonts"
+            alt="Poke fonts"
             height="20"
           />
         </a>
