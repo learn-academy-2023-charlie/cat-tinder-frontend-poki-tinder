@@ -1,21 +1,23 @@
 import React from "react"
-import { Nav, NavItem } from "reactstrap"
-import { NavLink } from "react-router-dom"
-import pokemonLogo from "../assets/pokemonLogo.png"
+import { Navbar } from "reactstrap"
 
-const Header = () => {
-    return(
-      <Nav className="header-nav custom-nav">
-      <NavItem>
-        <NavLink to="/">
+const Header = () =>
+{
+  return (
+    <>
+      <Navbar
+        className="my-2"
+        color="info"
+      >
+        <a href="/">
           <img
-            src={pokemonLogo}
-            alt="Pokemon logo"
-            className="pokemon-logo custom-logo"
+            src="https://see.fontimg.com/api/renderfont4/VGWjy/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/S29vbCBDYXR6/meows.png"
+            alt="Cat fonts"
+            height="20"
           />
-        </NavLink>
-      </NavItem>
-      </Nav>
-    )
+        </a>
+      </Navbar>
+    </>
+  )
 }
-export default Header
+
