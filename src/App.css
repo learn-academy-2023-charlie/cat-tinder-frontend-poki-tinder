@@ -24,6 +24,16 @@
   color: white;
 }
 
+.custom-nav {
+  text-align: center;
+}
+
+.custom-logo {
+  height: 150px;
+  width: auto;
+}
+
+
 .App-link {
   color: #61dafb;
 }
