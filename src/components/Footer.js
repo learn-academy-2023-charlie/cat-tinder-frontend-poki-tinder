@@ -1,10 +1,20 @@
 import React from "react"
+import { Navbar, NavbarBrand } from "reactstrap"
 
 const Footer = () => {
-    return(
+  return(
     <>
-    <h1> Made by Justin and Henri </h1>
+      <Navbar
+        className="my-2"
+        color="info"
+        fixed="bottom"
+      >
+        <NavbarBrand href="/">
+          &copy; Justin & Henri
+        </NavbarBrand>
+      </Navbar>
     </>
-    )
+  )
 }
+
 export default Footer

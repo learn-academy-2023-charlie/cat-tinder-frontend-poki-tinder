@@ -1,10 +1,23 @@
 import React from "react"
+import { Navbar } from "reactstrap"
 
-const Header = () => {
-    return(
+const Header = () =>
+{
+  return (
     <>
-    <h1> Pokemon Tinder </h1>
+      <Navbar
+        className="my-2"
+        color="info"
+      >
+        <a href="/">
+          <img
+            src="https://see.fontimg.com/api/renderfont4/VGWjy/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/S29vbCBDYXR6/meows.png"
+            alt="Poke fonts"
+            height="20"
+          />
+        </a>
+      </Navbar>
     </>
-    )
+  )
 }
-export default Header
+
