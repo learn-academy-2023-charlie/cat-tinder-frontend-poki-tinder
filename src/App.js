@@ -20,7 +20,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/pokemonindex" element={<PokemonIndex />} />
+        <Route path="/pokemonindex" element={<PokemonIndex pokemons={pokemons} />} />
         <Route path="/pokemonshow" element={<PokemonShow />} />
         <Route path="/pokemonnew" element={<PokemonNew />} />
         <Route path="/pokemonedit" element={<PokemonEdit />} />
