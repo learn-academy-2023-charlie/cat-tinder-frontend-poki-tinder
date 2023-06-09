@@ -1,7 +1,6 @@
 import React from "react"
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap"
 
-<<<<<<< HEAD
 const PokemonIndex = ({ pokemons }) => {
   console.log(pokemons)
   return(
@@ -31,14 +30,6 @@ const PokemonIndex = ({ pokemons }) => {
     })}
    </main>
   )
-=======
-const Index = () => {
-    return(
-        <>
-         <h1> Index </h1>
-        </>
-    )
->>>>>>> cdaba0b (header and foot test coverage done, missing home and NotFound tests)
 }
 
 export default PokemonIndex
