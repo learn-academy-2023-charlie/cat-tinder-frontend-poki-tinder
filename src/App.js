@@ -17,7 +17,7 @@ const App = () => {
   console.log(pokemons)
   return(
     <>
-      <Header />
+      <Header />     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pokemonindex" element={<PokemonIndex pokemons={pokemons} />} />

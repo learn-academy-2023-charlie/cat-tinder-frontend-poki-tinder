@@ -1,14 +1,16 @@
 import React from "react"
 import { useParams } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import { Card, CardBody, CardTitle, CardSubtitle, Col, CardImg } from "reactstrap"
 
-const Show = ({ pokemons }) => {
+const PokemonShow = ({ pokemons }) => {
   const { id } = useParams()
   let currentPokemon = pokemons.find((pokemon) => pokemon.id === +id)
   console.log(currentPokemon)
 
     return(
       <>
-       <h3> Pokemon Show</h3>
+       <h3> Pokemon Show </h3>
        <main className="card">
        <h5>{currentPokemon.image}</h5>
        </main>
@@ -21,4 +23,4 @@ const Show = ({ pokemons }) => {
       </>
     )
 }
-export default Show
+export default PokemonShow
