@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <Navbar
         className="my-2"
-        color="info"
+        color="warning"
         fixed="bottom"
       >
         <NavbarBrand href="/">

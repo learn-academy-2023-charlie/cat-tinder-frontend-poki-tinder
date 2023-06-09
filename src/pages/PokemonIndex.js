@@ -8,6 +8,7 @@ const PokemonIndex = ({ pokemons }) => {
       {pokemons?.map((pokemon, index) => {
         return (
           <Card
+          color="warning"
           style={{
             width: "14rem",
           }}
@@ -23,7 +24,7 @@ const PokemonIndex = ({ pokemons }) => {
               <br/>
               PokemonType: {pokemon.pokemon_type}
             </CardSubtitle>
-            <Button>See More Details</Button>
+            <Button>Show Pokemon Stats</Button>
           </CardBody>
         </Card>
       )

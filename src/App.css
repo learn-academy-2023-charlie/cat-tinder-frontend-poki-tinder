@@ -42,17 +42,25 @@
   margin: 2rem 0;
 }
 
+.card2 {
+  margin: 2rem 0;
+}
+
 img {
   height: 150px;
   width: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .cat-index-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.my-2 {
+  height: auto;
+  width: auto;
 }
