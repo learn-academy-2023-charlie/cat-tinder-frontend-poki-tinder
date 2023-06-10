@@ -7,11 +7,12 @@ const Header = () =>
     <>
       <Navbar
         className="my-2"
-        color="info"
+
+        color="warning"
       >
         <a href="/">
           <img
-            src="https://see.fontimg.com/api/renderfont4/VGWjy/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/S29vbCBDYXR6/meows.png"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Pok%C3%A9mon_FanMade_Logo.png"
             alt="Poke fonts"
             height="20"
           />
@@ -21,3 +22,5 @@ const Header = () =>
   )
 }
 
+
+export default Header

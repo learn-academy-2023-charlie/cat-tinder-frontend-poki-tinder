@@ -1,10 +1,45 @@
 import React from "react"
+import { useParams } from "react-router-dom"
+import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap"
 
-const Show= () => {
+const PokemonShow = ({ pokemons }) => {
+  const { id } = useParams()
+  let currentPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
+  console.log(currentPokemon)
+
     return(
-      <>
-       <h1> Show</h1>
-      </>
+      <main className="card" data-testid='pokemonshow'>
+      {currentPokemon && (
+        <Card
+          style={{
+            width: '18rem'
+          }}
+        >
+          <CardBody>
+            <CardTitle tag="h5">
+              {currentPokemon.name}
+            </CardTitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+              tag="h6"
+            >
+              Size {currentPokemon.size}
+            </CardSubtitle>
+          </CardBody>
+          <img
+            alt={`image of ${currentPokemon.name} who is a pokemon`}
+            src={currentPokemon.image}
+            width="100%"
+          />
+          <CardBody>
+            <CardText>
+              Type {currentPokemon.pokemon_type}
+            </CardText>
+          </CardBody>
+        </Card>
+      )}
+    </main>
     )
 }
-export default Show
+export default PokemonShow
+   
