@@ -4,7 +4,8 @@
     -   Created css class img, which changes all images on the webpage. Need to isolate images to adjust height, width, and location.
 
 ##  User Stories
--   As a user, I can see a page that lists of all the cat names.
+-   As a user, I can see a page that lists of all the cat names.✅
+
 
 -   As a user, I can click on a cat name and be taken to a page that shows me all the information about that cat.
 
