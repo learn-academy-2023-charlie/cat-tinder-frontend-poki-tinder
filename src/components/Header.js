@@ -7,6 +7,7 @@ const Header = () =>
     <>
       <Navbar
         className="my-2"
+
         color="warning"
       >
         <a href="/">
@@ -20,5 +21,6 @@ const Header = () =>
     </>
   )
 }
+
 
 export default Header
