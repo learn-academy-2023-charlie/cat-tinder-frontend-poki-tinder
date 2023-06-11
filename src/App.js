@@ -18,6 +18,12 @@ const App = () => {
     
   }
 
+  const updatePokemon = ( pokemon, id ) =>
+  {
+    console.log("pokemon:", pokemon);
+    console.log("id:", id);
+  }
+
   return(
     <>
       <Header />     
@@ -25,8 +31,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/pokemonindex" element={<PokemonIndex pokemons={pokemons} />} />
         <Route path="/pokemonshow/:id" element={<PokemonShow pokemons={pokemons}/>} />
-        <Route path="/pokemonnew" element={ <PokemonNew createPokemon={ createPokemon } />} />
-        <Route path="/pokemonedit" element={<PokemonEdit />} />
+        <Route path="/pokemonnew" element={ <PokemonNew createPokemon={createPokemon} />} />
+        <Route path="/pokemonedit/:id" element={ <PokemonEdit updatePokemon={updatePokemon}/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

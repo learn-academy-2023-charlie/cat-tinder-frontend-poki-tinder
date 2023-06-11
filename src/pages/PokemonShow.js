@@ -1,6 +1,7 @@
 import React from "react"
-import { useParams } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap"
+
 
 const PokemonShow = ({ pokemons }) => {
   const { id } = useParams()
@@ -36,7 +37,11 @@ const PokemonShow = ({ pokemons }) => {
               Type {currentPokemon.pokemon_type}
             </CardText>
           </CardBody>
+            <NavLink to={ `/pokemonedit/${ currentPokemon.id }` } className="nav-link">
+              Edit Poke Profile
+            </NavLink>
         </Card>
+        
       )}
     </main>
     )

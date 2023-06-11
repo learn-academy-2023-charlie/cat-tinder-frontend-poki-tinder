@@ -14,7 +14,7 @@ const Header = () =>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Pok%C3%A9mon_FanMade_Logo.png"
             alt="Poke fonts"
-            height="20"
+            height="15"
           />
         </a>
       </Navbar>
