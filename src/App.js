@@ -31,8 +31,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/pokemonindex" element={<PokemonIndex pokemons={pokemons} />} />
         <Route path="/pokemonshow/:id" element={<PokemonShow pokemons={pokemons}/>} />
+        <Route path="/pokemonedit/:id" element={ <PokemonEdit pokemons={ pokemons } updatePokemon={updatePokemon}/>} />
         <Route path="/pokemonnew" element={ <PokemonNew createPokemon={createPokemon} />} />
-        <Route path="/pokemonedit/:id" element={ <PokemonEdit updatePokemon={updatePokemon}/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
