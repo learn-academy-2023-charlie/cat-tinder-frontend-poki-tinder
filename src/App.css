@@ -24,7 +24,6 @@
   color: white;
 }
 
-
 .App-link {
   color: #61dafb;
 }
@@ -40,18 +39,19 @@
 
 .card {
   margin: 2rem 0;
+  height: 100%;
 }
 
 .card2 {
   margin: 2rem 0;
+  height: 100%;
 }
 
 img {
   height: 150px;
   width: 150px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .cat-index-cards {
