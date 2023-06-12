@@ -10,29 +10,31 @@ const PokemonIndex = ({ pokemons }) => {
       {pokemons?.map((pokemon, index) => {
         return (
           <Card
+          body
+          className="text-center"
           color="warning"
           style={{
             width: "14rem",
           }}
           key={index}
         >
-          <img alt={`profile of a pokemon named ${pokemon.name}`} src={pokemon.image} />
-          <CardBody>
-            <CardTitle tag="h5">{pokemon.name}</CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Species: {pokemon.species}
-              <br/>
-              Size: {pokemon.size}
-              <br/>
-              PokemonType: {pokemon.pokemon_type}
-            </CardSubtitle>
-            <Button>
-              <NavLink to={`/pokemonshow/${pokemon.id}`}>
-                  Click to view {pokemon.name}
-              </NavLink>
-            </Button>
-          </CardBody>
-        </Card>
+            <img alt={`profile of a pokemon named ${pokemon.name}`} src={pokemon.image} />
+            <CardBody>
+              <CardTitle tag="h5">{pokemon.name}</CardTitle>
+                <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  Species: {pokemon.species}
+                  <br/>
+                  Size: {pokemon.size}
+                  <br/>
+                  PokemonType: {pokemon.pokemon_type}
+                </CardSubtitle>
+                  <Button color="danger" outline >
+                  <NavLink to={`/pokemonshow/${pokemon.id}`}>
+                    Click to view
+                </NavLink>
+              </Button>
+            </CardBody>
+          </Card>
       )
     })}
    </main>
