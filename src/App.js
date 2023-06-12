@@ -35,14 +35,21 @@ const App = () => {
       method: "POST"
     })
       .then((response) => response.json())
-      .then((payload) => readPokemon())
+      .then((payload) => readPokemon(payload))
       .catch((errors) => console.log("Pokemon create errors:", errors))
   }
 
-  const updatePokemon = ( pokemon, id ) =>
-  {
-    console.log("pokemon:", pokemon);
-    console.log("id:", id);
+  const updatePokemon= (pokemon, id) => {
+    fetch(`http://localhost:3000/pokemons/${id}`, {
+      body: JSON.stringify(pokemon),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "PATCH"
+    })
+    .then((response) => response.json())
+    .then((payload) => updatePokemon(payload))
+    .catch((errors) => console.log("Pokemon create errors:", errors))
   }
 
   return(

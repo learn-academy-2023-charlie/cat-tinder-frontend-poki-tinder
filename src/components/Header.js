@@ -12,7 +12,7 @@ const Header = () =>
       >
         <a href="/">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Pok%C3%A9mon_FanMade_Logo.png"
+            src="https://images.squarespace-cdn.com/content/v1/5b47bb08f8370a85913c511a/1586523429769-V7KX8S0847N3H9UVJW07/Pokemon+Preorder+Header.png"
             alt="Poke fonts"
             height="15"
           />
