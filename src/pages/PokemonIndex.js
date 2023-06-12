@@ -4,8 +4,17 @@ import { NavLink } from "react-router-dom";
 
 const PokemonIndex = ({ pokemons }) => {
   console.log(pokemons);
+
+  const containerStyle = {
+    backgroundImage: "url('https://images3.alphacoders.com/126/1260271.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    minHeight: "100vh",
+    padding: "2rem",
+  };
+
   return (
-    <main>
+    <main style={containerStyle}>
       <Container>
         <Row>
           {pokemons?.map((pokemon, index) => {
