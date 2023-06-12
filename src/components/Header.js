@@ -1,26 +1,22 @@
-import React from "react"
-import { Navbar } from "reactstrap"
+import React from "react";
+import { Navbar } from "reactstrap";
 
-const Header = () =>
-{
+const Header = () => {
+  const imageUrl =
+    "https://images.squarespace-cdn.com/content/v1/5b47bb08f8370a85913c511a/1586523429769-V7KX8S0847N3H9UVJW07/Pokemon+Preorder+Header.png";
+
   return (
-    <>
-      <Navbar
-        className="my-2"
+    <header
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "17vh",
+        background: `url(${imageUrl}) no-repeat center center`,
+        backgroundSize: "cover",
+      }}
+    ></header>
+  );
+};
 
-        color="warning"
-      >
-        <a href="/">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/5b47bb08f8370a85913c511a/1586523429769-V7KX8S0847N3H9UVJW07/Pokemon+Preorder+Header.png"
-            alt="Poke fonts"
-            height="15"
-          />
-        </a>
-      </Navbar>
-    </>
-  )
-}
-
-
-export default Header
+export default Header;
