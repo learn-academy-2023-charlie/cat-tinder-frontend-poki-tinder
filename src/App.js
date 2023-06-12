@@ -35,7 +35,7 @@ const App = () => {
       method: "POST"
     })
       .then((response) => response.json())
-      .then((payload) => readPokemon())
+      .then((payload) => readPokemon(payload))
       .catch((errors) => console.log("Pokemon create errors:", errors))
   }
 
