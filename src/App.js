@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import PokemonIndex from "./pages/PokemonIndex"
@@ -8,14 +8,35 @@ import PokemonEdit from "./pages/PokemonEdit"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import { Routes, Route } from "react-router-dom"
-import mockPokemons from "./mockPokemons"
 import "./App.css"
 
 const App = () => {
-  const [pokemons, setPokemons] = useState(mockPokemons)
-  
-  const createPokemon = (newPokemon) => {
-    
+  const [pokemons, setPokemons] = useState([])
+
+  useEffect(() => {
+    readPokemon()
+  }, [])
+
+  const readPokemon = () => {
+    fetch("http://localhost:3000/pokemons")
+      .then((response) => response.json())
+      .then((payload) => {
+        setPokemons(payload)
+      })
+      .catch((error) => console.log(error))
+  }
+
+  const createPokemon = (pokemon) => {
+    fetch("http://localhost:3000/pokemons", {
+      body: JSON.stringify(pokemon),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    })
+      .then((response) => response.json())
+      .then((payload) => readPokemon())
+      .catch((errors) => console.log("Pokemon create errors:", errors))
   }
 
   const updatePokemon = ( pokemon, id ) =>
